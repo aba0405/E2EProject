@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Java_Selenium.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Validating Title(failed)">
+    <classes>
+      <class name="Java_Selenium.HomePage">
+        <methods>
+          <include name="initizliation"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Java_Selenium.HomePage -->
+      <class name="Java_Selenium.ValidateTitle">
+        <methods>
+          <include name="basePageNavegation"/>
+          <include name="teardown"/>
+          <include name="initizliation"/>
+        </methods>
+      </class> <!-- Java_Selenium.ValidateTitle -->
+      <class name="Java_Selenium.validateNavigationBar">
+        <methods>
+          <include name="teardown"/>
+          <include name="initizliation"/>
+        </methods>
+      </class> <!-- Java_Selenium.validateNavigationBar -->
+    </classes>
+  </test> <!-- Validating Title(failed) -->
+</suite> <!-- Failed suite [Suite] -->
